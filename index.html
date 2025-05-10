@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="si">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KING 1XBET CRASH PREDICTOR</title>
+  <style>
+        body {
+            background: url('https://www.dropbox.com/scl/fi/to3xwhyy2omd2n345nv6a/IMG-20250510-WA0048.jpg?rlkey=i94ewe97oyzwr1jny5zi1mati&st=0pmsq5z9&raw=1') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: bold;
+            padding: 20px;
+            display: inline-block;
+            border: 5px solid white;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px 40px;
+        }
+
+        .time-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            display: inline-block;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: 1.5em;
+        }
+
+        .next-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .next-label-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000000;
+            padding: 20px;
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            border: 5px solid #00BFFF;
+            box-shadow: 0px 0px 15px rgba(0, 0, 255, 0.8);
+        }
+
+        .next-label {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00BFFF;
+            text-shadow: 0px 0px 10px rgba(0, 0, 255, 0.8);
+        }
+
+        .next-time-box {
+            display: inline-block;
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            color: red;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            border: 5px solid;
+        }
+
+        .whatsapp-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffcc00;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: inline-block;
+            border: 2px solid #ffcc00;
+        }
+
+    </style>
+ </head>
+ <body>
+  <h1 class="title">KING 1XBET CRASH PREDICTOR</h1>
+  <div class="time-box">
+   <p>දැනට සජීවී කාලය: <span id="liveTime"></span></p>
+  </div>
+  <div class="next-container">
+   <div class="next-label-box">
+    <div class="next-label">
+     NEXT CRASH 5 ODD TIME
+    </div>
+   </div>
+   <div class="next-time-box">
+    <p id="nextTime">ඊළඟ කාලය: ගණනය කරමින්...</p>
+   </div>
+  </div>
+  <div class="whatsapp-box">
+   KING 1XBET WHATSAPP OWNER +94 76 732 4225
+  </div>
+  <script>
+        function updateLiveTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            document.getElementById("liveTime").textContent = `${hours}:${minutes}:${seconds}`;
+
+            const minutePairs = [
+                ["03", "04"], ["08", "09"], ["13", "14"], ["18", "19"],
+                ["23", "24"], ["28", "29"], ["33", "34"], ["38", "39"],
+                ["43", "44"], ["48", "49"], ["53", "54"], ["58", "59"]
+            ];
+
+            let nextTime = null;
+
+            for (let i = 0; i < minutePairs.length; i++) {
+                if (minutes < minutePairs[i][0]) {
+                    nextTime = `${hours}:${minutePairs[i][0]} / ${hours}:${minutePairs[i][1]}`;
+                    break;
+                }
+            }
+
+            if (!nextTime) {
+                const nextHour = String((parseInt(hours) + 1) % 24).padStart(2, '0');
+                nextTime = `${nextHour}:${minutePairs[0][0]} / ${nextHour}:${minutePairs[0][1]}`;
+            }
+
+            document.getElementById("nextTime").textContent = `ඊළඟ කාලය: ${nextTime}`;
+        }
+
+        setInterval(updateLiveTime, 1000);
+        updateLiveTime();
+    </script>
+ </body>
+</html>
